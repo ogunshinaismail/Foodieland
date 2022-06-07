@@ -448,6 +448,13 @@ nav {
     margin: auto;
     padding: 3rem 0;
 }
+.rec {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    width: 90%;
+    margin: auto;
+    padding: 3rem 0;
+}
 
 .recipe {
     width: 320px;
@@ -1070,6 +1077,13 @@ footer {
         flex-direction: column;
         align-items: center;
     }
+    .rec {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     .become-a-chef {
         width: 100%;
         display: flex;
@@ -1283,6 +1297,15 @@ footer {
         justify-content: center;
         align-items: center;
     }
+    .rec {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
     /* BECOME A CHEF */
     .become-a-chef {
         width: 100%;
@@ -1633,6 +1656,14 @@ footer {
         padding: 1rem 1rem;
     }
     .recipes-card {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .rec {
         width: 100%;
         margin: auto;
         display: flex;

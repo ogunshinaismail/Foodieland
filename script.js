@@ -421,14 +421,36 @@ const recipes = [
     },
 ]
 
+console.log(recipes.length)
 const menuBar = document.querySelector(".menu-bar")
 const menuModal = document.querySelector(".modal-menu")
 const recipesCard = document.querySelector(".recipes-card")
+const rec = document.querySelector(".rec")
 const tryNew = document.querySelector(".try-new-recipes-card")
 
 menuBar.addEventListener("click", function() {
     menuModal.classList.toggle("hide-menu-modal")
 })
+
+let reciCard = recipes.map( recipe => {
+    return `<div class="new-recipes">
+                <i class="fa-solid fa-heart like"></i>
+                <img src="${recipe.img}" alt="">
+                <p class="recipe-desc">${recipe.name}</p>
+                <div class="recipe-time-prod">
+                    <div class="recipe-time">
+                        <i class="fa-solid fa-stopwatch"></i>
+                        <p>${recipe.cookingTime} Minutes</p>
+                    </div>
+                    <div class="recipe-prod">
+                        <i class="fa-solid fa-utensils"></i>
+                        <p>${recipe.type}</p>
+                    </div>
+                </div>
+            </div>`
+});
+reciCard = reciCard.join('');
+rec.innerHTML = reciCard
 
 const size = 9
 const slice = recipes.slice(0, size)

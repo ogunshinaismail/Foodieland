@@ -466,7 +466,7 @@ let reciCard = recipes.map( recipe => {
 reciCard = reciCard.join('');
 recipesCard.innerHTML = reciCard
 
-
+ 
 
 
 
